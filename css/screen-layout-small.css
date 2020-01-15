@@ -1,0 +1,227 @@
+body{
+	max-width: 900px;
+}
+
+h1{
+	font-size: 30pt;
+	font-weight: bold;
+	letter-spacing: 2px;
+	line-height: 2em;
+}
+
+
+/*HOME SECTION*******************************************************************************************************************************************************/
+#home{
+	grid-template-columns: 1fr;
+	grid-template-rows: 70px auto 3fr 1fr 1fr;
+	grid-template-areas: 
+		"nav"
+		"blog"
+		"intro"
+		"socials"
+		"more"
+	;
+}
+
+
+
+/*nav{
+	height: 70px;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+}
+
+ul{
+	display: none;
+}*/
+
+
+
+
+nav{
+	grid-template-columns: 1fr;
+	grid-template-rows: 60px 100px;
+	align-items: center;
+	z-index: 10;
+	height: 60px;
+	overflow: hidden;
+}
+
+nav .hamburger{
+	display: block;
+	align-self: center;
+	width: 30px;
+	padding: 20px;
+}
+
+nav ul{
+	align-self: center;
+	height: 300px;
+	justify-self: center;
+	width: 100%;
+	background-color: blue;
+	margin-top: 200px;
+	
+}
+
+
+
+
+
+
+.intro{
+	padding-left: 0;
+	text-align: center;
+	align-self: center;
+	line-height: 0em;
+}
+
+.socials{
+	justify-self: center;
+	padding: 0px;
+}
+
+.view-more{
+	justify-self: center;
+	align-self: center;
+}
+
+.view-more img{
+	margin-right: 0;
+}
+
+
+
+
+
+
+/*About Section**************************************************************************************************************************************************************/
+#about{
+	height: auto;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 2fr 2fr 1fr 1fr 1fr;
+	grid-template-areas:
+		"about-head"
+		"profile-pic"
+		"article"
+		"skills-head"
+		"skills"
+	;
+}
+
+.profile-pic{
+	justify-self: center;
+}
+
+.profile-pic img{
+	width: 250px;
+}
+
+.profile-pic img:hover{
+	position: static;
+	width: 250px;
+	
+}
+
+article{
+	padding: 0 10px;
+}
+
+.skills{
+	background-color: #edeae5;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	justify-items: center;
+	padding: 10px;
+	align-items: center;
+}
+
+.skills img{
+	width: 70px;
+}
+
+.about-arrow{
+	display: none;
+}
+
+
+
+
+/*Contact Section****************************************************************************************************************************************************/
+#contact{
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 5fr 3fr;
+	grid-template-areas:
+		"contact-head"
+		"contact-sub-head"
+		"form"
+		"footer"
+	;
+}
+
+
+form{
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 2fr 1fr;
+	grid-template-areas:
+		"name-text"
+		"email-text"
+		"message-text"
+		"button"
+	;
+	width: 95%;
+	height: 300px;
+	margin-top: 50px;
+}
+
+p.contact-sub-header{
+	text-align: center;
+}
+
+.name{
+	display: none;
+}
+
+.email{
+	display: none;
+}
+
+.message{
+	display: none;
+}
+
+input::placeholder{
+    color: gray;
+}
+
+textarea::placeholder{
+	color: gray;
+}
+
+
+input.button{
+	width: 150px;
+	justify-self: center;
+	margin-right: 0px;
+}
+
+
+
+footer{
+	align-items: center;
+	grid-template-columns: 1fr;
+	grid-template-rows: 2fr 2fr 1fr;
+	grid-template-areas:
+		"section1"
+		"section2"
+		"copyrights"
+	;
+	text-align: center;
+}
+
+
+
+

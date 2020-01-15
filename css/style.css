@@ -1,0 +1,110 @@
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	color: #edeae5;
+	line-height: 1.5em;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #1a1a1a;
+	/*width: 100%;*/
+}
+
+h1{
+	font-size: 50pt;
+	font-weight: bold;
+	letter-spacing: 4px;
+}
+
+h2{
+	font-size: 30pt;
+	text-align: center;
+}
+
+h3{
+	color: #fe5355;
+	font-size: 12pt;
+	letter-spacing: 2px;
+}
+
+h4{
+	margin: 0;
+	letter-spacing: 2px;
+}
+
+h5{
+	margin: 0;
+	letter-spacing: 2px;
+	font-weight: normal;
+	font-size: 11pt;
+}
+
+a{
+	color: #fff;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+.button{
+	background-color: #fe5355;
+	border-style: none;
+	padding: 0;
+	text-transform: uppercase;
+	font-size: 12pt;
+	font-weight: bold;
+}
+
+.button a:hover{
+	text-decoration: none;
+}
+
+.active{
+	background-color: #1a1a1a;
+	color: #b8b8b8;
+}
+
+
+
+
+
+/*Blog Code***********************************************************************************************************************************************************/
+
+.wrapper{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	align-items: center;
+	justify-items: center;
+	text-align: center;
+	height: 100vh;
+}
+
+.blog-h1{
+	color: #b8b8b8;
+	font-size: 30pt;
+}
+
+.blog-h3{
+	color: #b8b8b8;
+	font-size: 15pt;
+}
+
+.blog-button{
+	background-color: #fe5355;
+	border-style: none;
+	padding: 0;
+	text-transform: uppercase;
+	font-size: 12pt;
+	font-weight: bold;
+}
+
+.blog-button a{
+	padding: 20px;
+	display: block;
+}

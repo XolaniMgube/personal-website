@@ -1,0 +1,547 @@
+body{
+	max-width: 1366px;
+}
+
+
+/*HOME SECTION*******************************************************************************************************************************************************/
+#home{
+	background-color: #1a1a1a;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 200px repeat(3, 3fr) 1fr;
+	grid-template-rows: 2fr 3fr 1fr 1fr;
+	grid-template-areas: 
+		"nav	intro	intro	intro	blog"
+		"nav	intro	intro	intro	blog"
+		"nav	socials	socials	socials	blog"
+		"nav	more	more	more	blog"
+	;
+
+}
+
+
+
+
+/*Navigation Code*/
+nav{
+	grid-area: nav;
+	background-color: #206268;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 2fr 3fr 1fr 1fr;
+	grid-template-areas:
+		"hamburger"
+		"nav-ul"
+	;
+}
+
+nav .hamburger{
+	grid-area: hamburger;
+	display: none;
+}
+
+.hamburger img{
+	width: 30px;
+}
+
+
+nav ul{
+	grid-area: nav-ul;
+	height: 100%;
+	padding: 0px;
+	margin: 0;
+	justify-self: center;
+	width: 100%;
+}
+
+nav ul li{
+	list-style: none;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+nav ul li a{
+	display: block;
+	padding: 25px 0;
+}
+
+nav ul li a:hover{
+	background-color: #1a1a1a;
+	text-decoration: none;
+	color: #b8b8b8;
+}
+
+
+
+
+
+/*Spaces on the Home Section*/
+.space.one{
+	grid-area: space1;
+}
+
+.space.two{
+	grid-area: space2;
+}
+
+
+
+
+
+/*Intro Code*/
+.intro{
+	grid-area: intro;
+	align-self: end;
+	margin: 0 0 50px 0;
+	justify-self: center;
+}
+
+span.dot{
+	color: #fe5355;
+	font-family: 'Poppins', sans-serif;
+}
+
+span.web-developer{
+	color: #edeae5;
+}
+
+
+
+
+
+/*Social Media Code*/
+.socials{
+	grid-area: socials;
+	justify-self: center;
+	padding-right: 280px;
+}
+
+.socials img{
+	width: 22px;
+	margin: 0 15px;
+}
+
+
+
+
+/*View More or the arrow*/
+.view-more{
+	grid-area: more;
+	justify-self: center;
+	align-self: center;
+}
+
+.view-more img{
+	width: 25px;
+}
+
+
+
+
+
+/*The blog button section*/
+.blog{
+	grid-area: blog;
+	justify-self: right;
+}
+
+.blog button{
+	background-color: #fe5355;
+	margin: 20px 30px 0 0;
+}
+
+.blog button a{
+	display: block;
+	padding: 7px 15px;
+}
+
+
+
+
+
+/*About Section**************************************************************************************************************************************************************/
+#about{
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 200px 1fr 3fr;
+	grid-template-rows: 1fr 3fr 2fr 1fr 1fr;
+	grid-template-areas:
+		"space3		about-head		about-head"
+		"space3		profile-pic		article"
+		"space3		skills-head		skills-head"
+		"space3		skills 			skills"
+		"space3		about-arrow		about-arrow"
+	;
+}
+
+
+
+/*Space one the left*/
+.space.three{
+	grid-area: space3;
+}
+
+
+
+/*Profile Picture Code*/
+.profile-pic{
+	grid-area: profile-pic;
+	justify-self: right;
+	align-self: center;
+}
+
+.profile-pic img{
+	width: 200px;
+}
+
+.profile-pic img:hover{
+	position: absolute;
+	top: 105vh;
+	left: 220px;
+	width: 500px;
+	z-index: 3;
+}
+
+
+
+/*About Me Heading Code*/
+.about-heading{
+	grid-area: about-head;
+}
+
+
+
+/*Article Code*/
+article{
+	grid-area: article;
+	align-self: center;
+	padding: 0 30px;
+}
+
+
+
+/*My Skills Heading Code*/
+.skills-heading{
+	grid-area: skills-head;
+	align-self: center;
+}
+
+
+
+/*My Skills Images Code*/
+.skills{
+	grid-area: skills;
+	background-color: #edeae5;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	justify-items: center;
+	padding: 10px;
+}
+
+.skills img{
+	width: 100px;
+}
+
+
+
+/*View More Arrow Code*/
+.about-arrow{
+	grid-area: about-arrow;
+	justify-self: center;
+	align-self: center;
+}
+
+.about-arrow img{
+	width: 25px;
+}
+
+
+
+
+
+/*Contact Section****************************************************************************************************************************************************/
+#contact{
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 200px 1fr;
+	grid-template-rows: 1fr 1fr 5fr 3fr;
+	grid-template-areas:
+		"space4		contact-head"
+		"space4		contact-sub-head"
+		"space4		form"
+		"space4		footer"
+	;
+}
+
+
+
+/*Space for the Navigation side*/
+.space.four{
+	grid-area: space4;
+}
+
+
+
+/*Contact header Code*/
+h2.contact-header{
+	grid-area: contact-head;
+	align-self: center;
+}
+
+p.contact-sub-header{
+	grid-area: contact-sub-head;
+	justify-self: center;
+}
+
+
+
+/*The Contact form*/
+form{
+	grid-area: form;
+	display: grid;
+	justify-self: center;
+	grid-template-columns: 1fr 5fr;
+	grid-template-rows: 1fr 1fr 2fr 1fr;
+	grid-template-areas:
+		"name		name-text"
+		"email		email-text"
+		"message	message-text"
+		"button		button"
+	;
+	width: 600px;
+	grid-gap: 10px 20px;
+	height: 300px;
+}
+
+.name{
+	grid-area: name;
+	justify-self: right;
+	align-self: center;
+
+}
+
+.name-textbox{
+	grid-area: name-text;
+	background-color: rgba(225,225,225,.0);
+	border: none;
+	border-bottom: 2px solid #edeae5;
+	margin: 10px 5px;
+	color: #edeae5;
+	font-size: 13pt;
+}
+
+input::placeholder {
+    color: transparent;
+}
+
+textarea::placeholder{
+	color: transparent;
+}
+
+.email{
+	grid-area: email;
+	justify-self: right;
+	align-self: center;
+}
+
+.email-textbox{
+	grid-area: email-text;
+	background-color: rgba(225,225,225,.0);
+	border: none;
+	border-bottom: 2px solid #edeae5;
+	margin: 10px 5px;
+	color: #edeae5;
+	font-size: 13pt;
+}
+
+.message{
+	grid-area: message;
+	justify-self: right;
+}
+
+.message-textarea{
+	grid-area: message-text;
+	background-color: rgba(225,225,225,.0);
+	border: none;
+	border-bottom: 2px solid #edeae5;
+	margin: 0px 5px;
+	height: 60px;
+	color: #edeae5;
+	font-size: 13pt;
+}
+
+input.button{
+	grid-area: button;
+	width: 30%;
+	height: 40px;
+	justify-self: right;
+	color: #edeae5;
+}
+
+input.button:hover{
+	cursor: pointer;
+}
+
+
+
+/*The footer*/
+footer{
+	grid-area: footer;
+	background-color: #edeae5;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 2fr 1fr;
+	grid-template-areas:
+		"section1		section2"
+		"copyrights		copyrights"
+	;
+	justify-items: center;
+}
+
+.section.one{
+	grid-area: section1;
+}
+
+.section.two{
+	grid-area: section2;
+}
+
+.copyrights{
+	grid-area: copyrights;
+}
+
+footer *{
+	color: #1a1a1a;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 11pt;
+}
+
+
+span.none-italic{
+	font-style: normal;
+}
+
+
+
+
+
+/*Projects Page Code*******************************************************************************************************************************************************/
+#projects-page{
+	display: grid;
+	grid-template-columns: 200px 1fr;
+	grid-template-rows: 1fr;
+	grid-template-areas:
+		"nav 	projects-list"
+	;
+}
+
+nav{
+	grid-area: nav;
+	height: 100vh;
+}
+
+#projects-list{
+	grid-area: projects-list;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 4fr 4fr;
+	grid-template-areas:
+		"projects-head"
+		"project-1"
+		"project-2"
+	;
+	grid-gap: 40px;
+}
+
+h2.projects-heading{
+	grid-area: projects-head;
+	margin: 0;
+	align-self: center;
+}
+
+.project.one{
+	grid-area: project-1;
+}
+
+.project.two{
+	grid-area: project-2;
+	display: none;
+}
+
+.project{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	grid-template-areas:
+		"project-img	project-info"
+	;
+	margin: 0 15px 100px 15px;
+	border-bottom: 2px solid #212121;
+}
+
+.project-image{
+	grid-area: project-img;
+	min-width: 300px;
+	align-self: center;
+	display: grid;
+	justify-items: center;
+}
+
+.project-image img{
+	width: 90%;
+
+}
+
+
+
+.project-info{
+	grid-area: project-info;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 2fr 3fr 2fr 2fr;
+	grid-template-areas:
+		"details"
+		"description"
+		"tools"
+		"visit-site"
+	;
+	align-items: center;
+}
+
+.details{
+	grid-area: details;
+}
+
+article.description{
+	grid-area: description;
+	padding: 0;
+}
+
+article.description p{
+	margin: 5px 0;
+}
+
+.tools{
+	grid-area: tools;
+}
+
+.tools ul{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: 1fr 1fr;
+	padding: 0 0 0 20px;
+	margin: 5px 0;
+}
+
+.visit-site{
+	grid-area: visit-site;
+}
+
+.visit-site button{
+	padding: 10px;
+}
+
+.visit-site button a{
+	color: #ffffff;
+}
