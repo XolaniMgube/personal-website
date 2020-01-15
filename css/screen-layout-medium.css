@@ -19,6 +19,8 @@ body{
 
 
 nav{
+	grid-area: nav;
+	width: 100%;
 	grid-template-columns: 1fr;
 	grid-template-rows: 60px 100px;
 	align-items: center;
@@ -140,3 +142,51 @@ footer{
 }
 
 
+
+
+
+
+
+
+/*Projects***********************************************************************************************************************/
+
+#projects-page{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 60px 1fr;
+	grid-template-areas:
+		"nav"
+		"project-list"
+	;
+}
+
+nav{
+	grid-area: nav;
+}
+
+#projects-list{
+	grid-area: project-list;
+}
+
+.project{
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas:
+		"project-img"
+		"project-info"
+	;
+}
+
+.projuct-image{
+	grid-area: project-image;
+}
+
+.project-info{
+	grid-area: project-info;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.visit-site{
+	justify-self: center;
+}

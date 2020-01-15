@@ -25,19 +25,6 @@ h1{
 
 
 
-/*nav{
-	height: 70px;
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr;
-}
-
-ul{
-	display: none;
-}*/
-
-
-
-
 nav{
 	grid-template-columns: 1fr;
 	grid-template-rows: 60px 100px;
@@ -59,7 +46,7 @@ nav ul{
 	height: 300px;
 	justify-self: center;
 	width: 100%;
-	background-color: blue;
+	background-color: #206268;
 	margin-top: 200px;
 	
 }
@@ -221,6 +208,62 @@ footer{
 	;
 	text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Projects Code***********************************************************************************************************/
+#projects-page{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 60px 1fr;
+	grid-template-areas:
+		"nav"
+		"project-list"
+	;
+}
+
+nav{
+	grid-area: nav;
+}
+
+#projects-list{
+	grid-area: project-list;
+}
+
+.project{
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas:
+		"project-img"
+		"project-info"
+	;
+}
+
+.projuct-image{
+	grid-area: project-image;
+}
+
+.project-info{
+
+	grid-area: project-info;
+}
+
+.visit-site{
+	justify-self: center;
+}
+
+
 
 
 

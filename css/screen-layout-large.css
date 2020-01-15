@@ -1,5 +1,5 @@
 body{
-	max-width: 1366px;
+	max-width: 1940px;
 }
 
 
@@ -436,10 +436,10 @@ span.none-italic{
 	;
 }
 
-nav{
+/*nav{
 	grid-area: nav;
 	height: 100vh;
-}
+}*/
 
 #projects-list{
 	grid-area: projects-list;
@@ -466,7 +466,6 @@ h2.projects-heading{
 
 .project.two{
 	grid-area: project-2;
-	display: none;
 }
 
 .project{
