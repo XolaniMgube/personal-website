@@ -116,15 +116,15 @@
 
 		<p class="contact-sub-header">Leave a message for a question or comment and I will get back to you..</p>
 
-		<form>
+		<form name="contactform" method="post" action="send_form_email.php">
 			<label class="name">Name :</label>
-			<input class="name-textbox" type="text" name="name" placeholder="Name">
+			<input class="name-textbox" type="text" name="first_name" placeholder="Name">
 
 			<label class="email">Email :</label>
 			<input class="email-textbox" type="text" name="email" placeholder="Email">
 
 			<label class="message">Message :</label>
-			<textarea class="message-textarea" placeholder="Message"></textarea>
+			<textarea class="message-textarea" placeholder="Message" name="comments"></textarea>
 
 			<input class="button" type="submit" name="submit">
 		</form>

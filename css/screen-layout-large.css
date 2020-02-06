@@ -449,7 +449,6 @@ span.none-italic{
 	grid-template-areas:
 		"projects-head"
 		"project-1"
-		"project-2"
 	;
 	grid-gap: 40px;
 }
@@ -464,10 +463,6 @@ h2.projects-heading{
 	grid-area: project-1;
 }
 
-.project.two{
-	grid-area: project-2;
-}
-
 .project{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -477,18 +472,24 @@ h2.projects-heading{
 	;
 	margin: 0 15px 100px 15px;
 	border-bottom: 2px solid #212121;
+	grid-gap: 15px 15px;
 }
 
 .project-image{
 	grid-area: project-img;
 	min-width: 300px;
-	align-self: center;
+	align-self: end;
 	display: grid;
 	justify-items: center;
+	background-color: #edeae5;
+	height: 100%;
+	display: grid;
+	align-items: center;
 }
 
 .project-image img{
 	width: 90%;
+	height: 80%;
 
 }
 
@@ -498,14 +499,14 @@ h2.projects-heading{
 	grid-area: project-info;
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 2fr 3fr 2fr 2fr;
+	grid-template-rows: 2fr 3fr 2fr;
 	grid-template-areas:
 		"details"
-		"description"
 		"tools"
 		"visit-site"
 	;
-	align-items: center;
+	align-self: center;
+	grid-gap: 10px 0;
 }
 
 .details{
@@ -517,9 +518,7 @@ article.description{
 	padding: 0;
 }
 
-article.description p{
-	margin: 5px 0;
-}
+
 
 .tools{
 	grid-area: tools;
