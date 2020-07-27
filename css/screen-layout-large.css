@@ -33,6 +33,9 @@ nav{
 		"hamburger"
 		"nav-ul"
 	;
+	position: fixed;
+	width: 200px;
+	height: 100vh;
 }
 
 nav .hamburger{
@@ -148,11 +151,14 @@ span.web-developer{
 .blog button{
 	background-color: #fe5355;
 	margin: 20px 30px 0 0;
+	width: 100px;
+	height: 35px;
 }
 
 .blog button a{
 	display: block;
 	padding: 7px 15px;
+	font-size: 13px;
 }
 
 
@@ -164,14 +170,15 @@ span.web-developer{
 	height: 100vh;
 	display: grid;
 	grid-template-columns: 200px 1fr 3fr;
-	grid-template-rows: 1fr 3fr 2fr 1fr 1fr;
+	grid-template-rows: 1fr 3fr 3fr 1fr;
 	grid-template-areas:
 		"space3		about-head		about-head"
 		"space3		profile-pic		article"
-		"space3		skills-head		skills-head"
+		/* "space3		skills-head		skills-head" */
 		"space3		skills 			skills"
 		"space3		about-arrow		about-arrow"
 	;
+	margin: 100px 0;
 }
 
 
@@ -216,26 +223,31 @@ article{
 	grid-area: article;
 	align-self: center;
 	padding: 0 30px;
+	width: 75%;
 }
 
 
 
 /*My Skills Heading Code*/
-.skills-heading{
+/* .skills-heading{
 	grid-area: skills-head;
 	align-self: center;
-}
+} */
 
 
 
 /*My Skills Images Code*/
-.skills{
+.skills {
 	grid-area: skills;
-	background-color: #edeae5;
+	width: 45%;
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	justify-items: center;
-	padding: 10px;
+	/* align-items: center; */
+	justify-self: center;
+}
+
+.skills ul{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr
 }
 
 .skills img{
