@@ -14,3 +14,4 @@ The simplest way to run the website is by opening the `index.html` file which is
 - ```HTML 5```
 - ```CSS 3 and CSS Grid```
 - ```Javascript```
+- ```PHP```
