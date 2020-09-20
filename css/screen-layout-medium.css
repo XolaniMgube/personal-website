@@ -84,10 +84,9 @@ nav ul{
 		"skills"
 		"about-arrow"
 	;
-	margin-bottom: 300px;
+	margin-bottom: 50px;
 	min-height: 100vh;
 	max-height: 200vh;
-	/* height: auto; */
 }
 
 .profile-pic{
@@ -101,18 +100,7 @@ nav ul{
 .profile-pic img:hover{
 	position: static;
 	width: 250px;
-}
-
-article{
-	width: 90%;
-}
-
-.skills{
-	width: 80%;
-}
-
-.about-arrow{
-	padding-top: 50px;
+	
 }
 
 

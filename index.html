@@ -31,10 +31,10 @@
 		<nav class="nav">
 			<div class="hamburger"><img onclick="toggleNav()" src="images/hamburger.png"></div>
 			<ul>
-				<li><a class="home" href="#home">home</a></li>
-				<li><a class="home" href="#about">about</a></li>
-				<li><a class="home" href="projects.html">projects</a></li>
-				<li><a class="home" href="#contact">contact</a></li>
+				<li><a class="active" href="#home">home</a></li>
+				<li><a href="#about">about</a></li>
+				<li><a href="projects.html">projects</a></li>
+				<li><a href="#contact">contact</a></li>
 			</ul>
 		</nav>
 
@@ -50,9 +50,7 @@
 		</div>
 
 		<div class="blog">
-			<button class="button">
-				<a href="documents/xolani-mgube-cv.pdf">VIEW CV</a>
-			</button>
+			<button class="button"><a href="xolani-mgube-cv.pdf">view cv</a></button>
 		</div>
 
 		<div class="socials">
@@ -86,28 +84,19 @@
 
 		<article>
 			<p>I'm a fullstack web developer who is fascinated by the architecture of designing and building web layouts and web applications. I have experience in creating websites for small businesses, developing useful web applications using new and relevent technologies.</p>
-			<p>Based in Johannesburg, currently in training through a learnership program with <a href="https://www.umuzi.org/">Umuzi Acardemy</a>, acquiring skills that enables the ability to develop high value products.</p>
+
+			<p>Based in Johannesburg, currently in training through a learnership program with Umuzi Acardemy, acquiring skills that enables the ability to develop high value products. </p>
 		</article>
 
+		<div class="skills-heading">
+			<h2>My Skills</h2>
+		</div>
 
 		<div class="skills">
-			<h2>My Skills</h2>
-			<h3>Technology Stack</h3>
-			<ul>
-				<li>HTML 5</li>
-				<li>CSS Grid</li>
-				<li>Javascript</li>
-				<li>Node js</li>
-				<li>React</li>
-				<li>PostgreSQL</li>
-			</ul>
-			
-			<h3>Technical Skills</h3>
-			<ul>
-				<li>Web UI design</li>
-				<li>Design Thinking</li>
-				<li>Unit Testing with Jasmine</li>
-			</ul>
+			<img src="images/html-image.png">
+			<img src="images/css-image.png">
+			<img src="images/javascript-image.png">
+			<img src="images/photoshop-image.png">
 		</div>
 
 		<div class="about-arrow">
@@ -127,15 +116,15 @@
 
 		<p class="contact-sub-header">Leave a message for a question or comment and I will get back to you..</p>
 
-		<form name="contactform" method="post" action="send_form_email.php">
+		<form>
 			<label class="name">Name :</label>
-			<input class="name-textbox" type="text" name="first_name" placeholder="Name">
+			<input class="name-textbox" type="text" name="name" placeholder="Name">
 
 			<label class="email">Email :</label>
 			<input class="email-textbox" type="text" name="email" placeholder="Email">
 
 			<label class="message">Message :</label>
-			<textarea class="message-textarea" placeholder="Message" name="comments"></textarea>
+			<textarea class="message-textarea" placeholder="Message"></textarea>
 
 			<input class="button" type="submit" name="submit">
 		</form>
@@ -143,14 +132,14 @@
 		<footer>
 			<div class="section one">
 				<p>Phone: 0743240074</p>
-				<p>Email: xnmgube@gmail.com</p>
-				<p>Github: <a target="_blank" href="https://github.com/XolaniMgube/">XolaniMgube</a></p>
+				<p>Email: <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">info@xolanimgube.co.za</a></p>
+				<p>Github: <a href="https://github.com/XolaniMgube/">XolaniMgube</a></p>
 			</div>
 
 			<div class="section two">
-				<p>Facebook: <a target="_blank" href="https://www.facebook.com/xolani.mgube.54">Xolani N Mgube</a></p>
-				<p>Instagram: <a target="_blank" href="https://www.instagram.com/xolani.underdog/">@xolani.underdog</a></p>
-				<p>LinkedIn: <a target="_blank" href="https://www.linkedin.com/in/xolani-mgube-b50974185/">Xolani Mgube</a></p>
+				<p>Facebook: <a href="https://www.facebook.com/xolani.mgube.54">Xolani N Mgube</a></p>
+				<p>Instagram: <a href="https://www.instagram.com/onlyxking/">@xolani.underdog</a></p>
+				<p>LinkedIn: <a href="https://www.linkedin.com/in/xolani-mgube-b50974185/">Xolani Mgube</a></p>
 			</div>
 
 			<div class="copyrights">
@@ -165,4 +154,3 @@
 
 	<script src="js/main.js"></script>
 </html>
-

@@ -17,17 +17,3 @@ let toggleNav = function(){
 
 
 }
-
-
-// Adding active class for menu links
-// let addActive = (event) => {
-// 	let element = document.getElementsByClassName("home");
-
-// 	for (let i = 0; i < element.length; i++){
-// 		// console.log("this is it" + [i])
-// 		element[0].classList.add("active")
-		
-// 	}
-
-	
-// }

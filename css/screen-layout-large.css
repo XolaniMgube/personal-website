@@ -33,9 +33,6 @@ nav{
 		"hamburger"
 		"nav-ul"
 	;
-	position: fixed;
-	width: 200px;
-	height: 100vh;
 }
 
 nav .hamburger{
@@ -151,14 +148,11 @@ span.web-developer{
 .blog button{
 	background-color: #fe5355;
 	margin: 20px 30px 0 0;
-	width: 100px;
-	height: 35px;
 }
 
 .blog button a{
 	display: block;
 	padding: 7px 15px;
-	font-size: 13px;
 }
 
 
@@ -170,15 +164,14 @@ span.web-developer{
 	height: 100vh;
 	display: grid;
 	grid-template-columns: 200px 1fr 3fr;
-	grid-template-rows: 1fr 3fr 3fr 1fr;
+	grid-template-rows: 1fr 3fr 2fr 1fr 1fr;
 	grid-template-areas:
 		"space3		about-head		about-head"
 		"space3		profile-pic		article"
-		/* "space3		skills-head		skills-head" */
+		"space3		skills-head		skills-head"
 		"space3		skills 			skills"
 		"space3		about-arrow		about-arrow"
 	;
-	margin: 100px 0;
 }
 
 
@@ -223,31 +216,26 @@ article{
 	grid-area: article;
 	align-self: center;
 	padding: 0 30px;
-	width: 75%;
 }
 
 
 
 /*My Skills Heading Code*/
-/* .skills-heading{
+.skills-heading{
 	grid-area: skills-head;
 	align-self: center;
-} */
+}
 
 
 
 /*My Skills Images Code*/
-.skills {
+.skills{
 	grid-area: skills;
-	width: 45%;
+	background-color: #edeae5;
 	display: grid;
-	/* align-items: center; */
-	justify-self: center;
-}
-
-.skills ul{
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr
+	grid-template-columns: repeat(4, 1fr);
+	justify-items: center;
+	padding: 10px;
 }
 
 .skills img{
@@ -461,6 +449,7 @@ span.none-italic{
 	grid-template-areas:
 		"projects-head"
 		"project-1"
+		"project-2"
 	;
 	grid-gap: 40px;
 }
@@ -475,6 +464,10 @@ h2.projects-heading{
 	grid-area: project-1;
 }
 
+.project.two{
+	grid-area: project-2;
+}
+
 .project{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -484,24 +477,18 @@ h2.projects-heading{
 	;
 	margin: 0 15px 100px 15px;
 	border-bottom: 2px solid #212121;
-	grid-gap: 15px 15px;
 }
 
 .project-image{
 	grid-area: project-img;
 	min-width: 300px;
-	align-self: end;
+	align-self: center;
 	display: grid;
 	justify-items: center;
-	background-color: #edeae5;
-	height: 100%;
-	display: grid;
-	align-items: center;
 }
 
 .project-image img{
 	width: 90%;
-	height: 80%;
 
 }
 
@@ -511,14 +498,14 @@ h2.projects-heading{
 	grid-area: project-info;
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 2fr 3fr 2fr;
+	grid-template-rows: 2fr 3fr 2fr 2fr;
 	grid-template-areas:
 		"details"
+		"description"
 		"tools"
 		"visit-site"
 	;
-	align-self: center;
-	grid-gap: 10px 0;
+	align-items: center;
 }
 
 .details{
@@ -530,7 +517,9 @@ article.description{
 	padding: 0;
 }
 
-
+article.description p{
+	margin: 5px 0;
+}
 
 .tools{
 	grid-area: tools;
