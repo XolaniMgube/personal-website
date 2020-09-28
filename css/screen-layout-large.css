@@ -24,15 +24,17 @@ body{
 
 /*Navigation Code*/
 nav{
+	position: fixed;
 	grid-area: nav;
 	background-color: #206268;
 	display: grid;
-	grid-template-columns: 1fr;
+	grid-template-columns: 200px;
 	grid-template-rows: 2fr 3fr 1fr 1fr;
 	grid-template-areas:
 		"hamburger"
 		"nav-ul"
 	;
+	height: 100vh;
 }
 
 nav .hamburger{
