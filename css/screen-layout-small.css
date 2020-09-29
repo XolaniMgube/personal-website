@@ -13,12 +13,12 @@ h1{
 /*HOME SECTION*******************************************************************************************************************************************************/
 #home{
 	grid-template-columns: 1fr;
-	grid-template-rows: 70px auto 3fr 1fr 1fr;
+	grid-template-rows: 70px 3fr 1fr 1fr 1fr;
 	grid-template-areas: 
 		"nav"
-		"blog"
 		"intro"
 		"socials"
+		"blog"
 		"more"
 	;
 }
@@ -66,7 +66,18 @@ nav ul{
 
 .socials{
 	justify-self: center;
+	align-self: center;
 	padding: 0px;
+}
+
+.blog{
+	justify-self: center;
+	align-self: center;
+}
+
+.blog button{
+	background-color: #fe5355;
+	margin: 0;
 }
 
 .view-more{
