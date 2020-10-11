@@ -98,7 +98,7 @@ nav ul{
 #about{
 	height: auto;
 	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 2fr 2fr 1fr 1fr 400px;
+	grid-template-rows: auto auto auto auto 3fr;
 	grid-template-areas:
 		"about-head"
 		"profile-pic"
@@ -150,10 +150,11 @@ article{
 
 /*Contact Section****************************************************************************************************************************************************/
 #contact{
-	height: 100vh;
+	margin-top: 100px;
+	height: auto;
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 1fr 5fr 3fr;
+	grid-template-rows: 1fr 1fr 6fr 5fr;
 	grid-template-areas:
 		"contact-head"
 		"contact-sub-head"
