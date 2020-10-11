@@ -28,7 +28,7 @@ nav{
 	grid-area: nav;
 	background-color: #206268;
 	display: grid;
-	grid-template-columns: 200px;
+	grid-template-columns: 250px;
 	grid-template-rows: 2fr 3fr 1fr 1fr;
 	grid-template-areas:
 		"hamburger"
@@ -165,8 +165,8 @@ span.web-developer{
 #about{
 	height: 100vh;
 	display: grid;
-	grid-template-columns: 200px 1fr 3fr;
-	grid-template-rows: 1fr 3fr 2fr 1fr 1fr;
+	grid-template-columns: 250px 1fr 3fr;
+	grid-template-rows: 1fr 3fr 2fr 300px 1fr;
 	grid-template-areas:
 		"space3		about-head		about-head"
 		"space3		profile-pic		article"
@@ -239,13 +239,14 @@ article{
 	grid-area: skills;
 	background-color: #edeae5;
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: 1fr 1fr;
 	justify-items: center;
-	padding: 10px;
+	padding: 40px 110px 0 110px;
 }
 
 .skills img{
-	width: 100px;
+	width: 80px;
 }
 
 

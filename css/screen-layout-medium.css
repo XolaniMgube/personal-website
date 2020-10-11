@@ -75,7 +75,7 @@ nav ul{
 /*About Section**************************************************************************************************************************************************************/
 #about{
 	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 3fr 3fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 3fr 3fr 1fr 300px 1fr;
 	grid-template-areas:
 		"about-head"
 		"profile-pic"
@@ -101,6 +101,10 @@ nav ul{
 	position: static;
 	width: 250px;
 	
+}
+
+.skills{
+	padding: 40px 0;
 }
 
 

@@ -98,7 +98,7 @@ nav ul{
 #about{
 	height: auto;
 	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 2fr 2fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 2fr 2fr 1fr 1fr 400px;
 	grid-template-areas:
 		"about-head"
 		"profile-pic"
@@ -130,10 +130,11 @@ article{
 	background-color: #edeae5;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 1fr;
+	grid-template-rows: 1fr 1fr 1fr ;
 	justify-items: center;
 	padding: 10px;
 	align-items: center;
+	height: 400px;
 }
 
 .skills img{
