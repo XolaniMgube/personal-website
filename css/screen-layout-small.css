@@ -237,7 +237,7 @@ footer{
 
 
 /*Projects Code***********************************************************************************************************/
-#projects-page{
+/* #projects-page{
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 60px 1fr;
@@ -245,36 +245,62 @@ footer{
 		"nav"
 		"project-list"
 	;
-}
+} */
 
-nav{
+/* nav{
 	grid-area: nav;
-}
+} */
 
 #projects-list{
-	grid-area: project-list;
+	/* grid-area: project-list; */
+	margin-left: 0;
 }
 
 .project{
 	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 1fr;
+	grid-template-rows: 200px 50px 50px;
 	grid-template-areas:
 		"project-img"
 		"project-info"
+		"project-buttons"
 	;
+	height: 300px;
+	width: 95%;
 }
 
 .projuct-image{
 	grid-area: project-image;
 }
 
-.project-info{
-
-	grid-area: project-info;
+.project-image img{
+	max-width: 350px;
 }
 
-.visit-site{
+.project-info{
 	justify-self: center;
+	grid-area: project-info;
+	height: 50px;
+	padding: 0;
+}
+
+.project-buttons{
+	justify-self: center;
+}
+
+.project-buttons button:last-child{
+	margin-right: 5px;
+}
+
+.project-buttons button{
+	margin: 0 5px;
+}
+
+.tools{
+	display: none;
+}
+
+.description{
+	display: none;
 }
 
 

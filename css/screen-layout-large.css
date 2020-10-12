@@ -65,6 +65,9 @@ nav ul li{
 nav ul li a{
 	display: block;
 	padding: 25px 0;
+	font-size: 13.5px;
+	font-weight: bold;
+	letter-spacing: 2px;
 }
 
 nav ul li a:hover{
@@ -278,6 +281,7 @@ article{
 		"space4		form"
 		"space4		footer"
 	;
+	margin-top: 100px;
 }
 
 
@@ -434,19 +438,7 @@ span.none-italic{
 
 
 /*Projects Page Code*******************************************************************************************************************************************************/
-#projects-page{
-	display: grid;
-	grid-template-columns: 200px 1fr;
-	grid-template-rows: 1fr;
-	grid-template-areas:
-		"nav 	projects-list"
-	;
-}
 
-/*nav{
-	grid-area: nav;
-	height: 100vh;
-}*/
 
 #projects-list{
 	grid-area: projects-list;
@@ -458,7 +450,9 @@ span.none-italic{
 		"project-1"
 		"project-2"
 	;
-	grid-gap: 40px;
+	grid-gap: 10px;
+	margin-left: 250px;
+	margin-top: 100px;
 }
 
 h2.projects-heading{
@@ -477,42 +471,45 @@ h2.projects-heading{
 
 .project{
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr;
+	grid-template-columns: 40% 60%;
+	grid-template-rows: 300px 50px;
 	grid-template-areas:
 		"project-img	project-info"
+		"project-img    project-buttons"
 	;
-	margin: 0 15px 100px 15px;
-	border-bottom: 2px solid #212121;
+	background-color: #282828;
+	width: 70%;
+	height: 350px;
+	margin: 40px auto;
 }
+
+
 
 .project-image{
 	grid-area: project-img;
 	min-width: 300px;
-	align-self: center;
 	display: grid;
 	justify-items: center;
+	margin-top: 20px;
 }
 
 .project-image img{
 	width: 90%;
-
 }
-
-
 
 .project-info{
 	grid-area: project-info;
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 2fr 3fr 2fr 2fr;
+	grid-template-rows: 1fr 2fr 2fr;
 	grid-template-areas:
 		"details"
 		"description"
 		"tools"
-		"visit-site"
 	;
 	align-items: center;
+	height: 220px;
+	padding: 30px 20px 0 0;
 }
 
 .details{
@@ -526,6 +523,7 @@ article.description{
 
 article.description p{
 	margin: 5px 0;
+	font-size: 14px;
 }
 
 .tools{
@@ -534,20 +532,41 @@ article.description p{
 
 .tools ul{
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(4, 1fr);
 	grid-auto-rows: 1fr 1fr;
-	padding: 0 0 0 20px;
-	margin: 5px 0;
+	list-style: none;
+	margin: 2px 0;
+	padding: 0;
 }
 
-.visit-site{
-	grid-area: visit-site;
+.tools ul li{
+	font-size: 12px;
+	color: #acabab;
 }
 
-.visit-site button{
-	padding: 10px;
+.project-buttons{
+	grid-area: project-buttons;
+	justify-self: end;
 }
 
-.visit-site button a{
+.project-buttons button{
+	width: 100px;
+	height: 40px;
+	margin: 0 5px;
+}
+
+.project-buttons button:last-child{
+	margin-right: 30px;
+}
+
+.project-buttons button:hover{
+	cursor: pointer;
+	border: 1px solid white;
+}
+
+.project-buttons button a{
 	color: #ffffff;
+	font-size: 13px;
+	display: block;
+	padding: 10px;
 }

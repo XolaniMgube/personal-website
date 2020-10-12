@@ -84,7 +84,7 @@ nav ul{
 		"skills"
 		"about-arrow"
 	;
-	margin-bottom: 50px;
+	/* margin-bottom: 50px; */
 	min-height: 100vh;
 	max-height: 200vh;
 }
@@ -154,31 +154,16 @@ footer{
 
 /*Projects***********************************************************************************************************************/
 
-#projects-page{
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 60px 1fr;
-	grid-template-areas:
-		"nav"
-		"project-list"
-	;
-}
-
-nav{
-	grid-area: nav;
-}
 
 #projects-list{
 	grid-area: project-list;
+	margin-left: 0;
 }
 
 .project{
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 1fr;
-	grid-template-areas:
-		"project-img"
-		"project-info"
-	;
+	grid-template-rows: 200px 50px;
+	width: 95%;
+	height: 250px;
 }
 
 .projuct-image{
@@ -187,10 +172,11 @@ nav{
 
 .project-info{
 	grid-area: project-info;
-	width: 80%;
+	width: 90%;
 	margin: 0 auto;
+	height: 200px;
 }
 
-.visit-site{
-	justify-self: center;
+.tools{
+	display: none;
 }
