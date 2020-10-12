@@ -29,7 +29,7 @@
 			<ul>
 				<li><a class="navigation active" href="#home" onclick="toggleNav()">home</a></li>
 				<li><a class="navigation" href="#about" onclick="toggleNav()">about</a></li>
-				<li><a class="navigation" href="projects.html" onclick="toggleNav()">projects</a></li>
+				<li><a class="navigation" href="#projects-list" onclick="toggleNav()">projects</a></li>
 				<li><a class="navigation" href="#contact" onclick="toggleNav()">contact</a></li>
 			</ul>
 		</nav>
@@ -57,7 +57,7 @@
 		</div>
 
 		<div class="view-more">
-			<a href="#about"><img src="images/arrow.png"></a>
+			<a href="#about" onclick="toggleNav()"><img src="images/arrow.png"></a>
 		</div>
 
 	</div>
@@ -102,8 +102,107 @@
 		</div>
 
 		<div class="about-arrow">
-			<a href="#contact"><img src="images/arrow.png"></a>
+			<a href="#projects-list" onclick="toggleNav()"><img src="images/arrow.png"></a>
 		</div>
+	</div>
+
+
+
+
+
+
+
+	<!-- projects code -->
+	<div id="projects-list">
+
+		<h2 class="projects-heading">My Projects</h2>
+
+
+
+		<!-- Project 1 ---------------------------------------------------------------------------------------------------------------->
+		<div class="project one">
+			<div class="project-image">
+				<img src="./images/corona-project.png">
+			</div>
+
+			<div class="project-info">
+
+				<div class="details">
+					<h4>Total Corona <span>(web application)</span> </h4>
+				</div>
+
+				
+				<article class="description">
+					<p>This is a web application built using React, that provides summarized covid 19 data for all the countries that have been exposed to the virus.</p>
+				</article>
+
+				<div class="tools">
+					<h4>Tools Used..</h4>
+					<ul>
+						<li>HTML</li>
+						<li>CSS 3 & Grid</li>
+						<li>Javascript ES6</li>
+						<li>React JS</li>
+						<li>API</li>
+						<li>Photoshop</li>
+					</ul>
+				</div>
+				
+			</div>
+
+			<div class="project-buttons">
+				<button class="button"><a href="https://xolani-corona.netlify.app/">visit app</a></button>
+				<button class="button"><a href="https://github.com/XolaniMgube/covid-19-api">view code</a></button>
+			</div>
+
+
+		</div>
+
+
+
+
+
+
+
+
+		<!-- Project 2 ---------------------------------------------------------------------------------------------------------------->
+		<div class="project two">
+			<div class="project-image">
+				<img src="./images/pure-proconcep-project.png">
+			</div>
+
+			<div class="project-info">
+
+				<div class="details">
+					<h4>Pure Proconcep <span>(client website)</span></h4>
+				</div>
+
+				
+				<article class="description">
+					<p>Pure Proconcep is live website that I build for a local client area at a very low budget to help get recognition for his business and also be a way for me to enhance my skills.</p>
+				</article>
+
+				<div class="tools">
+					<h4>Tools Used..</h4>
+					<ul>
+						<li>HTML</li>
+						<li>CSS 3 & Grid</li>
+						<li>Javascript</li>
+						<li>PHP</li>
+						<li>Photoshop</li>
+					</ul>
+				</div>
+				
+			</div>
+
+			<div class="project-buttons">
+				<button class="button"><a href="http://pureproconcep.co.za/">visit site</a></button>
+				<button class="button"><a href="https://github.com/XolaniMgube/pure-proconcep">view code</a></button>
+			</div>
+
+
+		</div>
+
 	</div>
 
 
