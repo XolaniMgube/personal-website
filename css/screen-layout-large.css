@@ -8,13 +8,12 @@ body{
 	background-color: #1a1a1a;
 	height: 100vh;
 	display: grid;
-	grid-template-columns: 200px repeat(3, 3fr) 1fr;
-	grid-template-rows: 2fr 3fr 1fr 1fr;
+	grid-template-columns: 200px 1fr;
+	grid-template-rows: 60vh 40vh;
 	grid-template-areas: 
-		"nav	intro	intro	intro	blog"
-		"nav	intro	intro	intro	blog"
-		"nav	socials	socials	socials	blog"
-		"nav	more	more	more	blog"
+		"nav	intro"
+		"nav	socials"
+		/* "nav	blog" */
 	;
 
 }
@@ -80,18 +79,6 @@ nav ul li a:hover{
 
 
 
-/*Spaces on the Home Section*/
-.space.one{
-	grid-area: space1;
-}
-
-.space.two{
-	grid-area: space2;
-}
-
-
-
-
 
 /*Intro Code*/
 .intro{
@@ -126,39 +113,39 @@ span.web-developer{
 	margin: 0 15px;
 }
 
-
-
-
-/*View More or the arrow*/
-.view-more{
-	grid-area: more;
-	justify-self: center;
-	align-self: center;
-}
-
-.view-more img{
-	width: 25px;
+.socials button{
+	padding: 10px 15px;
+	font-size: 12px;
+	letter-spacing: 3px;
+	margin: 50px 0 0 15px;
 }
 
 
 
 
 
-/*The blog button section*/
-.blog{
-	grid-area: blog;
-	justify-self: right;
-}
 
-.blog button{
-	background-color: #fe5355;
-	margin: 20px 30px 0 0;
-}
 
-.blog button a{
-	display: block;
-	padding: 7px 15px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

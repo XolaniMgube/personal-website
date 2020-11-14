@@ -49,11 +49,7 @@ nav ul{
 	width: 100%;
 	background-color: #206268;
 	margin-top: 200px;
-	
 }
-
-
-
 
 
 
@@ -70,26 +66,9 @@ nav ul{
 	padding: 0px;
 }
 
-.blog{
-	justify-self: center;
-	align-self: center;
+.socials button{
+	margin: 50px 0 0 55px;
 }
-
-.blog button{
-	background-color: #fe5355;
-	margin: 0;
-}
-
-.view-more{
-	justify-self: center;
-	align-self: center;
-}
-
-.view-more img{
-	margin-right: 0;
-}
-
-
 
 
 

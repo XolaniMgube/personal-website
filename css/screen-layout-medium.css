@@ -45,9 +45,7 @@ nav ul{
 	margin-top: 200px;
 	
 }
-/*.active{
-	background-color: blue;
-}*/
+
 
 .intro{
 	padding-left: 40px;
@@ -56,15 +54,6 @@ nav ul{
 .socials{
 	justify-self: center;
 	padding-left: 25px;
-}
-
-.view-more{
-	justify-self: center;
-	align-self: center;
-}
-
-.view-more img{
-	margin-right: 0;
 }
 
 
