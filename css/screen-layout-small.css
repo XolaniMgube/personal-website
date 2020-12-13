@@ -31,16 +31,9 @@ nav{
 	align-items: center;
 	z-index: 10;
 	height: 60px;
-	overflow: hidden;
 	width: 100%;
 }
 
-nav .hamburger{
-	display: block;
-	align-self: center;
-	width: 30px;
-	padding: 20px;
-}
 
 nav ul{
 	align-self: center;
@@ -48,7 +41,7 @@ nav ul{
 	justify-self: center;
 	width: 100%;
 	background-color: #206268;
-	margin-top: 200px;
+	/* margin-top: 200px; */
 }
 
 
@@ -129,7 +122,6 @@ article{
 
 /*Contact Section****************************************************************************************************************************************************/
 #contact{
-	margin-top: 100px;
 	height: auto;
 	display: grid;
 	grid-template-columns: 1fr;
@@ -216,22 +208,7 @@ footer{
 
 
 /*Projects Code***********************************************************************************************************/
-/* #projects-page{
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 60px 1fr;
-	grid-template-areas:
-		"nav"
-		"project-list"
-	;
-} */
-
-/* nav{
-	grid-area: nav;
-} */
-
 #projects-list{
-	/* grid-area: project-list; */
 	margin-left: 0;
 }
 
@@ -257,6 +234,7 @@ footer{
 
 .project-info{
 	justify-self: center;
+	justify-items: center;
 	grid-area: project-info;
 	height: 50px;
 	padding: 0;

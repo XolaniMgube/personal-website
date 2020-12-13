@@ -36,16 +36,6 @@ nav{
 	height: 100vh;
 }
 
-nav .hamburger{
-	grid-area: hamburger;
-	display: none;
-}
-
-.hamburger img{
-	width: 30px;
-}
-
-
 nav ul{
 	grid-area: nav-ul;
 	height: 100%;
@@ -73,6 +63,21 @@ nav ul li a:hover{
 	background-color: #1a1a1a;
 	text-decoration: none;
 	color: #b8b8b8;
+}
+
+.burger {
+  display: none;
+  align-self: center;
+  justify-self: end;
+  padding-right: 30px;
+}
+
+.burger div {
+  width: 20px;
+  height: 2px;
+  background-color: white;
+  margin: 4px;
+  transition: all 0.3s ease;
 }
 
 
@@ -556,4 +561,18 @@ article.description p{
 	font-size: 13px;
 	display: block;
 	padding: 10px;
+}
+
+
+@media screen and (max-width: 1300px) and (min-width: 901px) {
+  .project {
+	  margin: 40px;
+	  justify-self: center;
+	  width: 90%;
+	  grid-template-columns: 270px 1fr;
+  }
+
+  .project-info {
+	  padding-right: 5px;
+  }
 }
