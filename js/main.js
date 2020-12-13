@@ -22,7 +22,7 @@
 
 
 
-hoverEffect();
+// hoverEffect();
 
 const navFunctionality = () => {
   const nav = document.querySelector(".nav-links");
