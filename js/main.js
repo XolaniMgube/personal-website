@@ -1,26 +1,28 @@
 /** @format */
 // let skillsDiv = document.querySelector(".skills").innerHTML;
 
+let hoverEffect = (event) => {
+  let skill = document.querySelectorAll(".skill");
+  let skillsDiv = document.querySelector(".skills").innerHTML;
+  let target = event.currentTarget;
+  let skillImgName = target.classList[1];
 
-// let hoverEffect = () => {
-//   let skill = document.querySelectorAll(".skill");
-//   let skillsDiv = document.querySelector(".skills").innerHTML
+  // console.log(target.classList[1]);
 
-//   for (let i = 0; i < skill.length; i++) {
+  
 
-//     skill[i] = '<img src="images/html.png">'; 
-
-//     skill[i].addEventListener("mouseover", () => {
-//       skill[i].style.backgroundColor = "red";
-//       skillsDiv = "<div>xolani</div>";
-//     });
-//   }
-
-//   document.querySelector(".skills").innerHTML = skillsDiv;
-
-// };
-
-
+  for (let i = 0; i < skill.length; i++) {
+    // console.log(skill[i].outerHTML);
+    // console.log(target.outerHTML);
+    // if (target == skill[i]) {
+      console.log(target.outerHTML)
+      target.outerHTML = `<img class="skill ${skillImgName}" src="images/original-skills/${skillImgName}.png" onclick="hoverEffect(event)"></img>`;
+      console.log(target.outerHTML)
+  //   } else if (target != skill[i]) {
+  //     target = `<img class="skill ${skillImgName}" src="images/${skillImgName}.png" onclick="hoverEffect(event)"></img>`;
+  //   }
+  }
+};
 
 // hoverEffect();
 
